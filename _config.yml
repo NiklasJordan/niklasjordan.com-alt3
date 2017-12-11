@@ -1,0 +1,19 @@
+title: Niklas Jordan
+author: Niklas Jordan
+email: niklas.jordan@posteo.de
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+keywords: blub, test
+url: "niklasjordan.com"
+
+footer: This site is <a href="#">sustainable</a> and it <a href="#">does not track</a> you nor leaks your information to any third party. <a href="#">Imprint</a>
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+permalink: /:title.html

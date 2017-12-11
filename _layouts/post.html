@@ -1,0 +1,49 @@
+---
+layout: Default
+---
+
+  {% include head.html %}
+
+  <body>
+    <div class="toolbar">
+      <div class="container grid-lg">
+        <div class="columns">
+          <div class="column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            <p><span class="logo"><a href="{{ site.url }}">&lsaquo; Go Back</a> to home of niklasjordan.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kopf">
+      <div class="container grid-lg">
+        <div class="columns">
+          <div class="column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            <p class="post-date">{{ page.date | date_to_long_string }}</p>
+            <h1>{{ page.headline }}</h1>
+            <p class="intro">{{ page.intro }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container grid-lg">
+        <div class="columns">
+          <article class="maincontent column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            {{ content }}
+            <div class="share">
+              <h2>Share this article</h2>
+              <p>Share the link on <a href="#">Twitter</a>, <a href="#">Facebook</a> or <a href="#">LinkedIn</a>.</p>
+            </div>
+            <div class="follow">
+              <h2>Follow me</h2>
+              <p>Share the link on <a href="#">Twitter</a>, <a href="#">Facebook</a> or <a href="#">LinkedIn</a>.</p>
+            </div>
+          </article>
+      {% include footer.html %}
+    </div>
+    </div>
+    </div>
+
+  </body>
+</html>

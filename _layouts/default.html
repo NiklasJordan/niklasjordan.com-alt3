@@ -1,0 +1,40 @@
+---
+layout: Default
+---
+
+  {% include head.html %}
+
+  <body>
+    <div class="toolbar">
+      <div class="container grid-lg">
+        <div class="columns">
+          <div class="column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            <p><span class="logo">{{ site.title }}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kopf">
+      <div class="container grid-lg">
+        <div class="columns">
+          <div class="column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            <h1>{{ page.headline }}</h1>
+            <p class="intro">{{ page.intro }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container grid-lg">
+        <div class="columns">
+          <article class="maincontent column col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-9 col-mx-auto">
+            {{ content }}
+          </article>
+      {% include footer.html %}
+    </div>
+    </div>
+    </div>
+
+  </body>
+</html>
